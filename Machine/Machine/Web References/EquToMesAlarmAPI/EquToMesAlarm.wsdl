@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Alarm">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="modelList" type="tns:ArrayOfAlarm" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAlarm">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Alarm" nillable="true" type="tns:Alarm" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Alarm">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="AlarmCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="AlarmMsg" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiRequestByScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Validation">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ResourceCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EquipmentCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LocalTime" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Validation" />
+      <s:element name="AlarmResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AlarmResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiResponseForScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiResponseForScada" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiResponseForScada">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoginSoapHeader" type="tns:LoginSoapHeader" />
+      <s:complexType name="LoginSoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EquUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AlarmSoapIn">
+    <wsdl:part name="parameters" element="tns:Alarm" />
+  </wsdl:message>
+  <wsdl:message name="AlarmSoapOut">
+    <wsdl:part name="parameters" element="tns:AlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="AlarmLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="EquToMesAlarmSoap">
+    <wsdl:operation name="Alarm">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设备报警</wsdl:documentation>
+      <wsdl:input message="tns:AlarmSoapIn" />
+      <wsdl:output message="tns:AlarmSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EquToMesAlarmHttpGet" />
+  <wsdl:portType name="EquToMesAlarmHttpPost" />
+  <wsdl:binding name="EquToMesAlarmSoap" type="tns:EquToMesAlarmSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Alarm">
+      <soap:operation soapAction="http://tempuri.org/Alarm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AlarmLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesAlarmSoap12" type="tns:EquToMesAlarmSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Alarm">
+      <soap12:operation soapAction="http://tempuri.org/Alarm" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AlarmLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesAlarmHttpGet" type="tns:EquToMesAlarmHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesAlarmHttpPost" type="tns:EquToMesAlarmHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="EquToMesAlarm">
+    <wsdl:port name="EquToMesAlarmSoap" binding="tns:EquToMesAlarmSoap">
+      <soap:address location="http://10.36.23.222:8095/EquToMes/EquToMesAlarm.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesAlarmSoap12" binding="tns:EquToMesAlarmSoap12">
+      <soap12:address location="http://10.36.23.222:8095/EquToMes/EquToMesAlarm.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesAlarmHttpGet" binding="tns:EquToMesAlarmHttpGet">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesAlarm.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesAlarmHttpPost" binding="tns:EquToMesAlarmHttpPost">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesAlarm.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

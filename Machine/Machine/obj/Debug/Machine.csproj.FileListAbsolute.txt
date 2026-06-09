@@ -1,0 +1,420 @@
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.exe.config
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\backups\works\ZJ01\Machine\bin\Debug\Machine.exe.config
+D:\backups\works\ZJ01\Machine\bin\Debug\Machine.exe
+D:\backups\works\ZJ01\Machine\bin\Debug\Machine.pdb
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.exe
+D:\backups\works\ZJ01\Machine\Machine\obj\Debug\Machine.pdb
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe.config
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.pdb
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe.config
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\bin\Debug\Machine.pdb
+D:\出差地点\湖州捷威\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\Software\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe.config
+D:\Software\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe
+D:\Software\ZJ01 0822 To gu\Machine\bin\Debug\Machine.pdb
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe.config
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe
+D:\Software\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.pdb
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe.config
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\bin\Debug\Machine.pdb
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe.config
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe
+D:\出差地点\湖州捷威\0829\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.pdb
+D:\Software\0830\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe.config
+D:\Software\0830\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe
+D:\Software\0830\ZJ01 0822 To gu\Machine\bin\Debug\Machine.pdb
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe.config
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe
+D:\Software\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.pdb
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe.config
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\bin\Debug\Machine.pdb
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe.config
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe
+D:\出差地点\湖州捷威\0830\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.pdb
+D:\Software\0831\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe.config
+D:\Software\0831\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe
+D:\Software\0831\ZJ01 0822 To gu\Machine\bin\Debug\Machine.pdb
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe.config
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe
+D:\Software\0831\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.pdb
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe.config
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\bin\Debug\Machine.exe
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\bin\Debug\Machine.pdb
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe.config
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.exe
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\Machine\Machine\obj\Debug\Machine.pdb
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\bin\Debug\Machine.exe.config
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\bin\Debug\Machine.exe
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\bin\Debug\Machine.pdb
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.exe.config
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.exe
+D:\Software\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.pdb
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\bin\Debug\Machine.exe.config
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\bin\Debug\Machine.exe
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\bin\Debug\Machine.pdb
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csprojAssemblyReference.cache
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.exe.config
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.TipDlg.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.DebugToolsPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.DryingOvenPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UI.frmUploadOfflineData.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.HelperDebugPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.HistoryPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MainForm.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MaintenancePage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ManualScanCode.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesInfoPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesRecipeParamPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesInterfacePage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.MesSetPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ModifyMotorParameterPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ModifyMotorPosPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ModuleMonitorPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OnlineDebugPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OtherDebugPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OvenBntPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.OverViewPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.LockScreenPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.ParameterPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UI.ProductionDays.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.RobotPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.StopReasonPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.TransferDebugPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserLoginMES.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserManager.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.Properties.Resources.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserLogin.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UserPasswordsModify.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.UpDataWaterPage.resources
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csproj.GenerateResource.cache
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csproj.CoreCompileInputs.cache
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.csproj.CopyComplete
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.exe
+D:\backups\works\ZJ01 0920\ZJ01 0920\Machine\Machine\obj\Debug\Machine.pdb

@@ -1,0 +1,2651 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SystemControlLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:SystemControlLibrary.DataBaseRecord">
+            <summary>
+            用以保存数据库记录集的类
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.RecordType">
+            <summary>
+            数据库存储数据类型
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.TableType">
+            <summary>
+            数据库表
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.RecordColumn">
+            <summary>
+            记录表中列项
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.DataBaseRecord.TableName">
+            <summary>
+            数据库表名
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.DataBaseRecord.SysUserTable">
+            <summary>
+            用户表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.DataBaseRecord.MotorTable">
+            <summary>
+            电机点位表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.DataBaseRecord.RobotTable">
+            <summary>
+            机器人工位表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.DataBaseRecord.ParameterTable">
+            <summary>
+            设置参数表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.DataBaseRecord.AlarmTable">
+            <summary>
+            报警信息表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.DataBaseRecord.YieldTable">
+            <summary>
+            生产信息表
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.UserFormula">
+            <summary>
+            用户数据库样式表字段
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.MotorFormula">
+            <summary>
+            电机数据库样式表字段
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.RobotFormula">
+            <summary>
+            机器人数据库样式表
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.ParameterFormula">
+            <summary>
+            参数数据库样式表
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseRecord.AlarmFormula">
+            <summary>
+            报警数据库样式表
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.OpenDataBase(System.String,System.String)">
+            <summary>
+            连接打开数据库
+            </summary>
+            <param name="path"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.CloseDataBase">
+            <summary>
+            关闭数据库连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.CheckTable(SystemControlLibrary.DataBaseRecord.TableType)">
+            <summary>
+            查询表是否存在
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.CreateTable(SystemControlLibrary.DataBaseRecord.TableType)">
+            <summary>
+            创建表
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.ClearTable(SystemControlLibrary.DataBaseRecord.TableType)">
+            <summary>
+            清除表数据
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteTable(SystemControlLibrary.DataBaseRecord.TableType)">
+            <summary>
+            删除表
+            </summary>
+            <param name="table"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.AddUserInfo(SystemControlLibrary.DataBaseRecord.UserFormula)">
+            <summary>
+            添加用户信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteUserInfo(SystemControlLibrary.DataBaseRecord.UserFormula)">
+            <summary>
+            删除用户信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteAllUserInfo">
+            <summary>
+            删除所有用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.ModifyUserInfo(SystemControlLibrary.DataBaseRecord.UserFormula)">
+            <summary>
+            修改用户信息
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.GetUserList(System.Collections.Generic.List{SystemControlLibrary.DataBaseRecord.UserFormula}@)">
+            <summary>
+            获取所有用户列表
+            </summary>
+            <param name="userList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.GetCurUser(SystemControlLibrary.DataBaseRecord.UserFormula@)">
+            <summary>
+            获取当前用户信息
+            </summary>
+            <param name="curUser"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.UserLogin(System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="name"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.UserLogout">
+            <summary>
+            用户登出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.UserLevel">
+            <summary>
+            获取当前用户等级
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.AddMotorPos(SystemControlLibrary.DataBaseRecord.MotorFormula)">
+            <summary>
+            添加电机点位信息
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteMotorPos(SystemControlLibrary.DataBaseRecord.MotorFormula)">
+            <summary>
+            删除电机点位信息
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteMotorAllPos(SystemControlLibrary.DataBaseRecord.MotorFormula)">
+            <summary>
+            删除电机所有点位信息
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.ModifyMotorPos(SystemControlLibrary.DataBaseRecord.MotorFormula)">
+            <summary>
+            修改点击点位信息
+            </summary>
+            <param name="motor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.GetMotorPosList(System.Int32,System.Int32,System.Collections.Generic.List{SystemControlLibrary.DataBaseRecord.MotorFormula}@)">
+            <summary>
+            获取电机点位列表信息
+            </summary>
+            <param name="formulaID"></param>
+            <param name="motorID"></param>
+            <param name="motorPosList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.AddRobotStation(SystemControlLibrary.DataBaseRecord.RobotFormula)">
+            <summary>
+            添加机器人工位信息
+            </summary>
+            <param name="robot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteRobotStation(SystemControlLibrary.DataBaseRecord.RobotFormula)">
+            <summary>
+            删除机器人工位信息
+            </summary>
+            <param name="robot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteRobotAllStation(SystemControlLibrary.DataBaseRecord.RobotFormula)">
+            <summary>
+            删除机器人所有工位信息
+            </summary>
+            <param name="robot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.ModifyRobotStation(SystemControlLibrary.DataBaseRecord.RobotFormula)">
+            <summary>
+            修改机器人工位信息
+            </summary>
+            <param name="robot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.GetRobotStationList(System.Int32,System.Int32,System.Collections.Generic.List{SystemControlLibrary.DataBaseRecord.RobotFormula}@)">
+            <summary>
+            获取机器人工位信息列表
+            </summary>
+            <param name="formulaID"></param>
+            <param name="robotID"></param>
+            <param name="robotStationList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.AddParameter(SystemControlLibrary.DataBaseRecord.ParameterFormula)">
+            <summary>
+            添加参数
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteParameter(SystemControlLibrary.DataBaseRecord.ParameterFormula)">
+            <summary>
+            删除参数
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteModuleAllParameter(SystemControlLibrary.DataBaseRecord.ParameterFormula)">
+            <summary>
+            删除模组中所有参数
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.ModifyParameter(SystemControlLibrary.DataBaseRecord.ParameterFormula)">
+            <summary>
+            修改参数
+            </summary>
+            <param name="para"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.GetParameterList(System.Int32,System.String,System.Collections.Generic.List{SystemControlLibrary.DataBaseRecord.ParameterFormula}@)">
+            <summary>
+            获取模组参数列表
+            </summary>
+            <param name="formulaID"></param>
+            <param name="module"></param>
+            <param name="paraList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.AddAlarmInfo(SystemControlLibrary.DataBaseRecord.AlarmFormula)">
+            <summary>
+            添加报警信息
+            </summary>
+            <param name="alarm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DeleteAlarmInfo(System.Int32,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            删除报警信息
+            </summary>
+            <param name="formulaID"></param>
+            <param name="moduleID"></param>
+            <param name="alarmID"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.GetAlarmList(System.Int32,System.Int32,System.Int32,System.String,System.String,System.Data.DataTable@)">
+            <summary>
+            获取报警列表
+            </summary>
+            <param name="formulaID"></param>
+            <param name="moduleID"></param>
+            <param name="alarmID"></param>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="alarmTable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DataEncrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="plaintext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseRecord.DataDecrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="ciphetext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SystemControlLibrary.ControlInterface">
+            <summary>
+            控制接口
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ControlInterface.runsCtrl">
+            <summary>
+            模组控制线程
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.ControlInterface.RunsCtrl">
+            <summary>
+            模组控制线程
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ControlInterface.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ControlInterface.Initialize(System.IntPtr,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设备初始化
+            </summary>
+            <param name="hMsgWnd">消息句柄</param>
+            <param name="nMotors">电机数量</param>
+            <param name="nInputs">输入数量</param>
+            <param name="nOutputs">输出数量</param>
+        </member>
+        <member name="M:SystemControlLibrary.ControlInterface.InitializeRunThreads(System.IntPtr)">
+            <summary>
+            初始化线程
+            </summary>
+            <param name="hMsgWnd">消息句柄</param>
+        </member>
+        <member name="T:SystemControlLibrary.DataBaseAccess">
+            <summary>
+            数据库记录集，密封不可继承
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.Connect(System.String,System.String)">
+            <summary>
+            连接数据库
+            </summary>
+            <param name="path">数据库文件路径</param>
+            <param name="password">数据库连接密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.DisConnect">
+            <summary>
+            断开数据库连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.ExecuteDataTable(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary> 
+            执行一个查询语句，返回一个包含查询结果的DataTable 
+            </summary> 
+            <param name="sql">要执行的查询语句</param> 
+            <param name="parameters">执行SQL查询语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.ExecuteNonQuery(System.String,System.Data.OleDb.OleDbParameter[])">
+            <summary> 
+            对Access数据库执行增删改操作，返回受影响的行数。 
+            </summary> 
+            <param name="sql">要执行的增删改的SQL语句</param> 
+            <param name="parameters">执行增删改语句所需要的参数，参数必须以它们在SQL语句中的顺序为准</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.Vacuum">
+            <summary>
+            收缩数据库 VACUUM
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.BeginTransaction">
+            <summary>
+            开启事务
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.CommitTransaction">
+            <summary>
+            提交事务
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DataBaseAccess.RollbackTransaction">
+            <summary>
+            回滚事务
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.InputManager">
+            <summary>
+            输入管理
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.InputManager.InputsTotal">
+            <summary>
+            输入点总数量
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.InputManager.LstInputs">
+            <summary>
+            输入点集合
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.InputManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.OutputManager">
+            <summary>
+            输出管理
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.OutputManager.OutputsTotal">
+            <summary>
+            输出点总数量
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.OutputManager.LstOutputs">
+            <summary>
+            输出点集合
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.OutputManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MotorManager">
+            <summary>
+            电机管理
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.MotorManager.MotorsTotal">
+            <summary>
+            电机总数量
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.MotorManager.LstMotors">
+            <summary>
+            电机集合
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.MotorManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.MotorManager.StopAllMotors">
+            <summary>
+            停止所有电机
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.MotorManager.SetAllSvon(System.Boolean)">
+            <summary>
+            设置所有电机使能
+            </summary>
+            <param name="bOn">使能\失能</param>
+        </member>
+        <member name="M:SystemControlLibrary.MotorManager.BreakAllMotion(System.Boolean)">
+            <summary>
+            中断所有电机动作
+            </summary>
+            <param name="bActive">中断</param>
+        </member>
+        <member name="T:SystemControlLibrary.DeviceManager">
+            <summary>
+            设备管理
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.Initialize(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            设备初始化
+            </summary>
+            <param name="strLicensCode">授权码</param>
+            <param name="nInputs">输入位数量</param>
+            <param name="nOutputs">输出位数量</param>
+            <param name="nMotors">电机数量</param>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.DeviceCount">
+            <summary>
+            设备数量
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.GetDeviceInfo(System.Int32,System.String@)">
+            <summary>
+            设备信息
+            </summary>
+            <param name="nDevIdx">设备索引</param>
+            <param name="strInfo">返回设备信息</param>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.Connect(System.Int32,System.Int32)">
+            <summary>
+            连接设备（重连情况下使用）
+            </summary>
+            <param name="nDevIdx">设备索引</param>
+            <param name="nSubIdx">子设备索引</param>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.Disconnect(System.Int32,System.Int32)">
+            <summary>
+            断开设备（重连情况下使用）
+            </summary>
+            <param name="nDevIdx">设备索引</param>
+            <param name="nSubIdx">子设备索引</param>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.GetInstance">
+            <summary>
+            获取本类实例
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.GetInputManger">
+            <summary>
+            获取输入管理类
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.GetOutputManager">
+            <summary>
+            获取输出管理类
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.GetMotorManager">
+            <summary>
+            获取电机管理类
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.Inputs(System.Int32)">
+            <summary>
+            获取输入点
+            </summary>
+            <param name="nIndex">索引</param>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.Outputs(System.Int32)">
+            <summary>
+            获取输出点
+            </summary>
+            <param name="nIndex">索引</param>
+        </member>
+        <member name="M:SystemControlLibrary.DeviceManager.Motors(System.Int32)">
+            <summary>
+            获取电机
+            </summary>
+            <param name="nIndex">索引</param>
+        </member>
+        <member name="T:SystemControlLibrary.Input">
+            <summary>
+            输入点控制类
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Input.inputIdx">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Input.num">
+            <summary>
+            点位编号
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Input.name">
+            <summary>
+            点位名称
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Input.useDllName">
+            <summary>
+            点位库名称
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Input.timeout">
+            <summary>
+            点位超时时间
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Input.Num">
+            <summary>
+            点位编号
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Input.Name">
+            <summary>
+            点位名称
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Input.UseDllName">
+            <summary>
+            点位库名称
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Input.Timeout">
+            <summary>
+            点位超时时间
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Input.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Input.Init(System.Int32)">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Input.IsOff">
+            <summary>
+            输入为OFF
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Input.IsOn">
+            <summary>
+            输入为ON
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.ManualDebugThread">
+            <summary>
+            维护界面操作线程
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.busy">
+            <summary>
+            忙信号
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.debugOutput">
+            <summary>
+            输出点位
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.outputValue">
+            <summary>
+            输出状态值
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.hasOuputOps">
+            <summary>
+            有输出操作
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.debugMotor">
+            <summary>
+            电机
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.motorPos">
+            <summary>
+            电机位置
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.hasMotorOps">
+            <summary>
+            有输出操作
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.motorLocation">
+            <summary>
+            电机点位
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ManualDebugThread.motorMoveType">
+            <summary>
+            电机移动类型
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.#ctor(System.Int32)">
+            <summary>
+            手动调试线程构造函数
+            </summary>
+            <param name="RunID"></param>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.RunThread">
+            <summary>
+            运行线程
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.ManualDebugOutput(SystemControlLibrary.Output,System.Boolean)">
+            <summary>
+            手动调试输出
+            </summary>
+            <param name="output">输出点位</param>
+            <param name="bOn">输出状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.ManualDebugMotorHome(SystemControlLibrary.Motor)">
+            <summary>
+            手动调试电机归零
+            </summary>
+            <param name="motor">电机</param>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.ManualDebugMotorMove(SystemControlLibrary.Motor,System.Int32,System.Single,SystemControlLibrary.MotorMoveType)">
+            <summary>
+            手动调试电机移动
+            </summary>
+            <param name="motor">电机</param>
+            <param name="nLocation">电机点位</param>
+            <param name="fValue">位置值</param>
+            <param name="moveType">移动类型</param>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.ManualDebugStopMotor(SystemControlLibrary.Motor)">
+            <summary>
+            手动调试电机停止
+            </summary>
+            <param name="motor">电机</param>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.IssueOutput(SystemControlLibrary.Output,System.Boolean)">
+            <summary>
+            输出触发
+            </summary>
+            <param name="output">输出点位</param>
+            <param name="bOn">输出状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.IssueMotorHome(SystemControlLibrary.Motor)">
+            <summary>
+            电机归零触发
+            </summary>
+            <param name="motor">电机</param>
+        </member>
+        <member name="M:SystemControlLibrary.ManualDebugThread.IssueMotorMove(SystemControlLibrary.Motor,System.Int32,System.Single,SystemControlLibrary.MotorMoveType)">
+            <summary>
+            电机移动触发
+            </summary>
+            <param name="motor">电机</param>
+            <param name="nLocation">电机点位</param>
+            <param name="fValue">位置值</param>
+            <param name="moveType">移动类型</param>
+        </member>
+        <member name="T:SystemControlLibrary.ModuleManager">
+            <summary>
+            模组管理
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ModuleManager.modulesCount">
+            <summary>
+            模组数量
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ModuleManager.curModule">
+            <summary>
+            当前模组
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ModuleManager.strError">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ModuleManager.lstModules">
+            <summary>
+            模组列表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.ModuleManager.moduleManager">
+            <summary>
+            模组管理类引用
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.GetInstance">
+            <summary>
+            获取本类实例
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.Modules(System.Int32)">
+            <summary>
+            获取模组
+            </summary>
+            <param name="nIndex">索引</param>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.Initialize">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.GetModuleCount">
+            <summary>
+            获取模组数量
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.GetCurModule">
+            <summary>
+            获取当前模组
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.SetCurModule(System.Int32)">
+            <summary>
+            设置当前模组
+            </summary>
+            <param name="nModule"></param>
+        </member>
+        <member name="M:SystemControlLibrary.ModuleManager.GetErrorMessage">
+            <summary>
+            获取错误信息
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.Motor">
+            <summary>
+            电机控制类
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.motorIdx">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.name">
+            <summary>
+            点位名称
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.useDllName">
+            <summary>
+            点位库名称
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.homeTimeout">
+            <summary>
+            找原点超时时间
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.moveTimeout">
+            <summary>
+            移动超时时间
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.homeOffset">
+            <summary>
+            回零误差
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.posErrRange">
+            <summary>
+            位置误差
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Motor.speedErrRange">
+            <summary>
+            速度误差
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.MotorIdx">
+            <summary>
+            电机轴号索引
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.Name">
+            <summary>
+            电机名称
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.UseDllName">
+            <summary>
+            电机使用的Dll名称
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.HomeTimeout">
+            <summary>
+            电机回零超时时间
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.MoveTimeout">
+            <summary>
+            电机移动超时时间
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.HomeOffset">
+            <summary>
+            回零误差
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.PosErrRange">
+            <summary>
+            位置误差
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Motor.SpeedErrRange">
+            <summary>
+            速度误差
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.Init(System.Int32)">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.Home">
+            <summary>
+            找原点
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.MoveLoc(System.Int32,System.Single,System.Int32)">
+            <summary>
+            定位移动
+            </summary>
+            <param name="nDestLoc">目标位置</param>
+            <param name="fOffset">偏移值</param>
+            <param name="nSpeedMode">速度模式</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.MoveAbs(System.Single,System.Int32)">
+            <summary>
+            绝对移动
+            </summary>
+            <param name="fDestPos">目标位置值</param>
+            <param name="nSpeedMode">速度模式</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.MoveAbs(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            绝对移动
+            </summary>
+            <param name="fDestPos">目标位置值</param>
+            <param name="fVelocity">移动速度（毫米\秒）</param>
+            <param name="fAccTime">加速时间</param>
+            <param name="fDecTime">减速时间</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.MoveRel(System.Single,System.Int32)">
+            <summary>
+            相对移动
+            </summary>
+            <param name="fDist">相对距离值</param>
+            <param name="nSpeedMode">速度模式</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.MoveRel(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            相对移动
+            </summary>
+            <param name="fDist">相对距离值</param>
+            <param name="fVelocity">移动速度（毫米\秒）</param>
+            <param name="fAccTime">加速时间</param>
+            <param name="fDecTime">减速时间</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.MoveJog(System.Boolean,System.Int32)">
+            <summary>
+            电机点动（开始移动）
+            </summary>
+            <param name="bPositive">移动方向</param>
+            <param name="nSpeedMode">速度模式</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.TorqueMove(System.Boolean,System.Single,System.Int32)">
+            <summary>
+            扭力移动
+            </summary>
+            <param name="bPositive">移动方向</param>
+            <param name="fTorque">扭力值</param>
+            <param name="nSpeedMode">速度模式</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.Stop">
+            <summary>
+            停止移动
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.Reset">
+            <summary>
+            电机复位
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.SetPos(System.Single)">
+            <summary>
+            设置位置
+            </summary>
+            <param name="fPos">位置值</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.SetSvon(System.Boolean)">
+            <summary>
+            电机使能
+            </summary>
+            <param name="bSvOn">使能</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.WaitMotionDone(System.UInt32)">
+            <summary>
+            等待电机动作完成
+            </summary>
+            <param name="unTimeOut">超时</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.WaitMoveInPos(System.Single,System.UInt32)">
+            <summary>
+            等待电机移动到位
+            </summary>
+            <param name="fDestPos">目标位置值</param>
+            <param name="unTimeOut">超时</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetMotorStatus(System.Boolean@)">
+            <summary>
+            获取电机停止状态
+            </summary>
+            <param name="bStatus">返回状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetIOStatus(System.Int32,System.Boolean@)">
+            <summary>
+            获取电机IO状态
+            </summary>
+            <param name="nMotorIO">电机IO类型</param>
+            <param name="bStatus">返回状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetCurPos(System.Single@)">
+            <summary>
+            获取电机当前位置
+            </summary>
+            <param name="fCurPos">返回位置值</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetCurSpeed(System.Single@)">
+            <summary>
+            获取电机当前速度
+            </summary>
+            <param name="fCurSpeed">返回速度值</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetCurTorque(System.Single@)">
+            <summary>
+            获取电机当前扭力
+            </summary>
+            <param name="fCurTorque">返回扭力值</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetLocCount">
+            <summary>
+            获取电机点位数量
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.DeleteAllLoc">
+            <summary>
+            删除所有电机点位
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.AddLocation(System.Int32,System.String,System.Single)">
+            <summary>
+            添加电机点位
+            </summary>
+            <param name="nIdxLoc">点位索引</param>
+            <param name="strName">点位名称</param>
+            <param name="fValue">点位值</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.SetLocation(System.Int32,System.String,System.Single)">
+            <summary>
+            设置电机点位
+            </summary>
+            <param name="nIdxLoc">点位索引</param>
+            <param name="strName">点位名称</param>
+            <param name="fValue">点位值</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetLocation(System.Int32,System.String@,System.Single@)">
+            <summary>
+            获取电机点位
+            </summary>
+            <param name="nIdxLoc">点位索引</param>
+            <param name="strName">返回点位名称</param>
+            <param name="fValue">返回点位值</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.SetSpeed(System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            设置电机速度
+            </summary>
+            <param name="nSpeedMode">速度模式</param>
+            <param name="fVelocity">移动速度（毫米\秒）</param>
+            <param name="fAccTime">加速时间</param>
+            <param name="fDecTime">减速时间</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.GetSpeed(System.Int32,System.Single@,System.Single@,System.Single@)">
+            <summary>
+            获取电机速度
+            </summary>
+            <param name="nSpeedMode">速度模式</param>
+            <param name="fVelocity">返回移动速度（毫米\秒）</param>
+            <param name="fAccTime">返回加速时间</param>
+            <param name="fDecTime">返回减速时间</param>
+        </member>
+        <member name="M:SystemControlLibrary.Motor.MotionBreak(System.Boolean)">
+            <summary>
+            中断电机动作
+            </summary>
+            <param name="bBreak">中断\否</param>
+        </member>
+        <member name="T:SystemControlLibrary.Output">
+            <summary>
+            输出点控制类
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Output.outputIdx">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Output.num">
+            <summary>
+            点位编号
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Output.name">
+            <summary>
+            点位名称
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Output.useDllName">
+            <summary>
+            点位库名称
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Output.monitorEN">
+            <summary>
+            点位监视使能
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Output.Num">
+            <summary>
+            点位编号
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Output.Name">
+            <summary>
+            点位名称
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Output.UseDllName">
+            <summary>
+            点位库名称
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Output.MonitorEN">
+            <summary>
+            点位监视使能
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Output.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Output.Init(System.Int32)">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Output.Off">
+            <summary>
+            设置状态OFF
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Output.On">
+            <summary>
+            设置状态ON
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Output.IsOff">
+            <summary>
+            检查状态为OFF
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Output.IsOn">
+            <summary>
+            检查状态为ON
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.Property">
+            <summary>
+            属性参数类
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Property.#ctor(System.String,System.String,System.String,System.String,System.Object,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            添加属性参数
+            </summary>
+            <param name="categroy">属性分组类别</param>
+            <param name="name">属性名</param>
+            <param name="displayName">显示名称</param>
+            <param name="description">描述</param>
+            <param name="value">属性值</param>
+            <param name="permissions">属性权限</param>
+            <param name="readOnly">属性仅可读</param>
+            <param name="visible">属性可见性</param>
+        </member>
+        <member name="T:SystemControlLibrary.PropertyManage">
+            <summary>
+            属性参数管理
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.PropertyManage.CustomPropertyDescriptor">
+            <summary>
+            用户属性描述管理类
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RegisterForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RegisterForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SystemControlLibrary.RegisterForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.Run">
+            <summary>
+            模组基类
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.Run.RunMode">
+            <summary>
+            线程运行模式
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.RunMode.RunModeInit">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.RunMode.RunModeAuto">
+            <summary>
+            自动运行
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.RunMode.RunModeStop">
+            <summary>
+            停止
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.runID">
+            <summary>
+            模组ID
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.enabled">
+            <summary>
+            使能启用状态
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.runStop">
+            <summary>
+            运行停止
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.mcAlarm">
+            <summary>
+            设备报警
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.alarmStopMC">
+            <summary>
+            指示报警停止设备
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.initComplete">
+            <summary>
+            初始化完成
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.stepMode">
+            <summary>
+            单步模式
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.runMode">
+            <summary>
+            运行模式
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.nextInitStep">
+            <summary>
+            初始化步骤
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.nextAutoStep">
+            <summary>
+            自动运行步骤
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.hasMsgBox">
+            <summary>
+            模组是否有enum MESSAGE_TYPE任意一项信息弹窗：当自动运行有弹窗时，请置为TRUE
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.msgList">
+            <summary>
+            非模态报警对话框弹出列表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.Run.msgListLock">
+            <summary>
+            非模态报警对话框弹出列表操作锁
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Run.InitComplete">
+            <summary>
+            初始化完成标识
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Run.StepMode">
+            <summary>
+            单步模式
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.Run.MsgList">
+            <summary>
+            非模态报警对话框弹出列表
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.#ctor(System.Int32)">
+            <summary>
+            类构造函数
+            </summary>
+            <param name="RunID">模组ID</param>
+        </member>
+        <member name="M:SystemControlLibrary.Run.InitOperation">
+            <summary>
+            派生类需重写：初始化操作
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.AutoOperation">
+            <summary>
+            派生类需重写：自动运行步骤
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.PowerUpRestart">
+            <summary>
+            派生类需重写：上电操作
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.RunThread">
+            <summary>
+            模组运行线程
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.Init">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.AutoRun">
+            <summary>
+            启动运行
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.Stop">
+            <summary>
+            停止运行
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.Restart">
+            <summary>
+            整机重置
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.Alarm">
+            <summary>
+            报警
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.ResetMCAlarm">
+            <summary>
+            复位所有报警
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.IsModuleEnable">
+            <summary>
+            模组是否启用：TRUE启用，FALSE停用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.Run.Enable(System.Boolean)">
+            <summary>
+            模组使能操作：TRUE启用，FALSE停用
+            </summary>
+            <param name="bEnable"></param>
+        </member>
+        <member name="M:SystemControlLibrary.Run.AlarmStopMC(System.Boolean)">
+            <summary>
+            报警整机停机
+            </summary>
+            <param name="bStopMC"></param>
+        </member>
+        <member name="M:SystemControlLibrary.Run.InitFinished">
+            <summary>
+            初始化完成时调用（模组中使用）
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.GetRunID">
+            <summary>
+            获取模组ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.Run.IsRunning">
+            <summary>
+            是否在运行中
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.Run.InsertAlarmInfo(System.Int32,System.String,System.Int32,System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            保存报警信息，子类可重写改变保存位置
+            </summary>
+            <param name="msgID">报警ID</param>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="runModuleID">模组ID</param>
+            <param name="runName">模组名</param>
+            <param name="productFormula">产品类型</param>
+            <param name="curTime">当前时间</param>
+        </member>
+        <member name="M:SystemControlLibrary.Run.ShowMessageID(System.Int32,System.String[],System.Int32,System.Windows.Forms.DialogResult)">
+            <summary>
+            非模态弹窗：非阻塞弹出线程会继续向下执行，一般弹出在Messsage.cfg中配置的报警
+            </summary>
+            <param name="msgID">报警ID</param>
+            <param name="addMsg">附加报警内容</param>
+            <param name="countdownTime">倒计时时间</param>
+            <param name="countdownDlgBtn">倒计时完默认按钮</param>
+        </member>
+        <member name="M:SystemControlLibrary.Run.ShowMessageID(System.Int32,System.String,System.String,HelperLibrary.MessageType,System.Int32,System.Windows.Forms.DialogResult)">
+            <summary>
+            非模态弹窗：非阻塞弹出线程会继续向下执行，弹出自定义报警内容与报警处理方法
+            </summary>
+            <param name="msgID">报警ID</param>
+            <param name="msg">报警内容</param>
+            <param name="msgDispose">报警处理方法</param>
+            <param name="msgType">报警类型</param>
+            <param name="countdownTime">倒计时时间</param>
+            <param name="countdownDlgBtn">倒计时完默认按钮：OK或YES/NO</param>
+            <returns>用户响应的弹窗按钮：OK或YES/NO</returns>
+        </member>
+        <member name="M:SystemControlLibrary.Run.ShowMessageBox(System.Int32,System.String,System.String,HelperLibrary.MessageType,System.Int32,System.Windows.Forms.DialogResult)">
+            <summary>
+            模态报警弹窗：阻塞弹出，线程停止向下执行，必须先响应此弹窗
+            </summary>
+            <param name="msgID">报警ID</param>
+            <param name="msg">报警内容</param>
+            <param name="msgDispose">报警处理方法</param>
+            <param name="msgType">报警类型</param>
+            <param name="countdownTime">倒计时时间</param>
+            <param name="countdownDlgBtn">倒计时完默认按钮：OK或YES/NO</param>
+            <returns>用户响应的弹窗按钮：OK或YES/NO</returns>
+        </member>
+        <member name="T:SystemControlLibrary.RunCtrl">
+            <summary>
+            模组控制线程，密封不可继承
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.runsCount">
+            <summary>
+            运行模组数量
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.stepMode">
+            <summary>
+            是否单步模式
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.msgWnd">
+            <summary>
+            消息窗口句柄
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.mcCtrlBtnState">
+            <summary>
+            控制按钮状态
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.ctrlLock">
+            <summary>
+            按钮资源锁
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.mcState">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.lstRuns">
+            <summary>
+            模组列表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.manualDebugThread">
+            <summary>
+            手动调试线程
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.beforeStart">
+            <summary>
+            委托函数，启动前调用
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunCtrl.afterStop">
+            <summary>
+            委托函数，停止后调用
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunCtrl.ManualDebugThread">
+            <summary>
+            手动调试线程
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.Initialize(System.Int32,System.Collections.Generic.List{SystemControlLibrary.RunEx},SystemControlLibrary.ManualDebugThread,System.IntPtr)">
+            <summary>
+            初始化函数
+            </summary>
+            <param name="nRuns">模组数量</param>
+            <param name="lstRuns">模组列表</param>
+            <param name="debugThread">手动调试线程</param>
+            <param name="hMsgWnd">消息窗口</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.IsStepMode">
+            <summary>
+            是否单步模组
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.GetMCState">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.GetRunCount">
+            <summary>
+            模组数量
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.GetRun(System.Int32)">
+            <summary>
+            获取模组
+            </summary>
+            <param name="nIndex">模组索引</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.StopAllMotor">
+            <summary>
+            停止所有电机
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.HasModuleAlarm">
+            <summary>
+            是否有模组报警
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.HasModuleMessage">
+            <summary>
+            是否有弹窗提示或报警
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.Start">
+            <summary>
+            启动
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.Stop">
+            <summary>
+            停止
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.Reset">
+            <summary>
+            复位
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.Restart">
+            <summary>
+            整机重置
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.EmStop">
+            <summary>
+            急停按下
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.EmStopRelease">
+            <summary>
+            急停释放
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.RunThread">
+            <summary>
+            运行线程
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.RunWhile">
+            <summary>
+            循环函数
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.StartCtrl">
+            <summary>
+            启动控制
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.StopCtrl">
+            <summary>
+            停止控制
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.ResetCtrl">
+            <summary>
+            复位控制
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.RestartCtrl">
+            <summary>
+            整机重置控制
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.EmStopCtrl">
+            <summary>
+            急停按下
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.EmStopReleaseCtrl">
+            <summary>
+            急停弹起
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.SetStepMode(System.Boolean)">
+            <summary>
+            设置单步模式
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.SetMCState(SystemControlLibrary.MCState)">
+            <summary>
+            设置设备状态
+            </summary>
+            <param name="mcState">设备状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.GetMCCtrlBtnState(SystemControlLibrary.MCCtrlBtn)">
+            <summary>
+            获取设备按钮状态
+            </summary>
+            <param name="btnType">按钮类型</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.SetMCCtrlBtnState(SystemControlLibrary.MCCtrlBtn,System.Boolean)">
+            <summary>
+            设置设备按钮状态
+            </summary>
+            <param name="btnType">按钮类型</param>
+            <param name="bState">状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.IsAllModuleInitFinished">
+            <summary>
+            是否所有模组初始化完成
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunCtrl.IsAllModuleStop">
+            <summary>
+            是否所有模组是停止状态
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.RunEx">
+            <summary>
+            模组基类
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.RunEx.InitSteps">
+            <summary>
+            初始化步骤
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.RunEx.AutoSteps">
+            <summary>
+            自动运行步骤
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.langulageEng">
+            <summary>
+            是否英文语言
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.msgEng">
+            <summary>
+            英文提示信息
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.msgChs">
+            <summary>
+            中文提示信息
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.motorLoc">
+            <summary>
+            电机点位保存，用以防呆
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.dryRun">
+            <summary>
+            空运行标示
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.inputMap">
+            <summary>
+            输入点容器
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.outputMap">
+            <summary>
+            输出点容器
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.motorMap">
+            <summary>
+            电机容器
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.parameterProperty">
+            <summary>
+            参数管理容器
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.startSwitchStep">
+            <summary>
+            switch开始步骤
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.stepStartTime">
+            <summary>
+            模块开始时间
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.moduleUseTime">
+            <summary>
+            模块当前运行时间
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.RunEx.moduleTragetTime">
+            <summary>
+            模块目标运行时间
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunEx.ModuleUseTime">
+            <summary>
+            模块当前运行时间
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunEx.ModuleTragetTime">
+            <summary>
+            模块目标运行时间
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunEx.ParameterProperty">
+            <summary>
+            参数管理容器
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunEx.DryRun">
+            <summary>
+            空运行标志
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.#ctor(System.Int32)">
+            <summary>
+            类构造函数
+            </summary>
+            <param name="RunID">模组ID</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.PowerUpRestart">
+            <summary>
+            派生类需重写：上电操作
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.InitOperation">
+            <summary>
+            派生类需重写：初始化操作
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.AutoOperation">
+            <summary>
+            派生类需重写：自动运行步骤
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.InitializeConfig(System.String)">
+            <summary>
+            加载配置文件，初始化配置
+            </summary>
+            <param name="module"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.SaveConfig">
+            <summary>
+            保存配置文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.GetHardwareConfig(System.Collections.Generic.List{System.Int32}@,System.Collections.Generic.List{System.Int32}@,System.Collections.Generic.List{System.Int32}@)">
+            <summary>
+            获取硬件配置信息
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.ReadParameter">
+            <summary>
+            读取模组参数
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.UpdateLanguage">
+            <summary>
+            更新设备语言
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.CurMsgStr(System.String,System.String)">
+            <summary>
+            更新步骤信息
+            </summary>
+            <param name="chs">中文</param>
+            <param name="eng">英文</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.CheckInput(SystemControlLibrary.Input,System.Boolean)">
+            <summary>
+            检查输入状态
+            </summary>
+            <param name="input">输入点</param>
+            <param name="bState">状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.WaitInput(SystemControlLibrary.Input,System.Boolean)">
+            <summary>
+            等待输入状态
+            </summary>
+            <param name="input"></param>
+            <param name="bState"></param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.IoAction(SystemControlLibrary.Output,System.Boolean,SystemControlLibrary.Input,System.Boolean)">
+            <summary>
+            IO联动并检查状态
+            </summary>
+            <param name="output">输出点位</param>
+            <param name="bOutState">输出状态</param>
+            <param name="input">输入点位</param>
+            <param name="bInState">输入状态</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.MotorHome(System.Int32)">
+            <summary>
+            单轴找原点
+            </summary>
+            <param name="nMotorID">电机ID</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.MotorsHome(System.Int32[],System.Int32)">
+            <summary>
+            多轴同时找原点
+            </summary>
+            <param name="MotorsID">电机ID数组</param>
+            <param name="nCount">电机数量</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.MotorMove(System.Int32,System.Int32,System.Single)">
+            <summary>
+            单轴点位移动
+            </summary>
+            <param name="nMotorID">电机ID</param>
+            <param name="nPosID">点位ID</param>
+            <param name="fOffset">偏移值</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.MotorsMove(System.Int32[],System.Int32[],System.Int32)">
+            <summary>
+            多轴点位移动
+            </summary>
+            <param name="MotorsID">电机ID数组</param>
+            <param name="PosID">点位ID数组</param>
+            <param name="nCount">电机数量</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.MotorsMove(System.Int32[],System.Int32[],System.Single[],System.Int32)">
+            <summary>
+            多轴点位移动（可偏移）
+            </summary>
+            <param name="MotorsID">电机ID数组</param>
+            <param name="PosID">点位ID数组</param>
+            <param name="OffsetPos">偏移值数组</param>
+            <param name="nCount">电机数量</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.MoveMotorPos(SystemControlLibrary.Motor,System.Single,System.Int32)">
+            <summary>
+            单轴位置移动
+            </summary>
+            <param name="motor">电机</param>
+            <param name="fPos">位置值</param>
+            <param name="nSpeedMode">速度模式</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.MoveMotorsPos(SystemControlLibrary.Motor[],System.Single[],System.Int32[],System.Int32)">
+            <summary>
+            多轴位置移动
+            </summary>
+            <param name="motors">电机数组</param>
+            <param name="Pos">位置值数组</param>
+            <param name="SpeedMode">速度模式数组</param>
+            <param name="nCount">电机数量</param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.SaveMotorMoveLoc(System.Int32,System.Int32,System.Single)">
+            <summary>
+            保存自动运行位置
+            </summary>
+            <param name="motorID">电机ID</param>
+            <param name="posID">位置ID</param>
+            <param name="offset">偏移值</param>
+        </member>
+        <member name="M:SystemControlLibrary.RunEx.IsMotorLocChanged">
+            <summary>
+            检查电机位置：TRUE被改变，FALSE未发生改变
+            </summary>
+            <returns>TRUE被改变，FALSE未发生改变</returns>
+        </member>
+        <member name="T:SystemControlLibrary.RunTask">
+            <summary>
+            线程任务，派生模组
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunTask.RunName">
+            <summary>
+            线程名称：公开读，保护写
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunTask.RunClass">
+            <summary>
+            类名称：公开读，保护写
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunTask.RunModule">
+            <summary>
+            模块名称：公开读，保护写
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunTask.RunMsg">
+            <summary>
+            线程运行信息：公开读，保护写
+            </summary>
+        </member>
+        <member name="P:SystemControlLibrary.RunTask.TaskThread">
+            <summary>
+            任务运行线程
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.RunTask.GetMsg">
+            <summary>
+            获取线程运行信息
+            </summary>
+            <returns>线程运行信息</returns>
+        </member>
+        <member name="M:SystemControlLibrary.RunTask.BeginThread">
+            <summary>
+            开始线程运行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.RunTask.EndThread">
+            <summary>
+            结束线程运行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.RunTask.RunThread">
+            <summary>
+            运行线程，需派生类实现
+            </summary>
+            <exception>未实现此方法时抛异常Exception</exception>
+        </member>
+        <member name="M:SystemControlLibrary.RunTask.IsTerminate">
+            <summary>
+            是否线程终止
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SystemControlLibrary.FunBeforeStart">
+            <summary>
+            启动前调用该委托函数
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.FunAfterStop">
+            <summary>
+            停止后调用该委托函数
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MotorSpeedMode">
+            <summary>
+            电机速度模式
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorSpeedMode.MotorResetSpeed">
+            <summary>
+            原点搜索速度
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorSpeedMode.MotorDefaultSpeed">
+            <summary>
+            默认速度
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorSpeedMode.MotorMediumSpeed">
+            <summary>
+            中等速度
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorSpeedMode.MotorFastSpeed">
+            <summary>
+            快速速度
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorSpeedMode.NumOfMotorSpeedModes">
+            <summary>
+            模式数量
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MotorCode">
+            <summary>
+            电机代码
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorFailed">
+            <summary>
+            失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorOK">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorCommErr">
+            <summary>
+            通讯错误
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorAlarm">
+            <summary>
+            报警
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorTimeout">
+            <summary>
+            超时
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorPosELHit">
+            <summary>
+            撞到正限位
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorNegELHit">
+            <summary>
+            撞到负限位
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorBreak">
+            <summary>
+            中断
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.MotorOthers">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorCode.NumOfMotorCode">
+            <summary>
+            电机代码数量
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MotorIO">
+            <summary>
+            电机IO
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.MotorIO_PEL">
+            <summary>
+            正限位
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.MotorIO_NEL">
+            <summary>
+            负限位
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.MotorIO_ORG">
+            <summary>
+            原点
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.MotorIO_RDY">
+            <summary>
+            准备好
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.MotorIO_ALM">
+            <summary>
+            报警
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.MotorIO_INP">
+            <summary>
+            到位
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.MotorIO_SVON">
+            <summary>
+            使能
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorIO.NumOfMotorIO">
+            <summary>
+            电机IO数量
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MotorMoveType">
+            <summary>
+            电机移动类型
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorMoveType.MotorMoveInvalid">
+            <summary>
+            无效
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorMoveType.MotorMoveHome">
+            <summary>
+            复位归零
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorMoveType.MotorMoveForward">
+            <summary>
+            正向移动
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorMoveType.MotorMoveBackward">
+            <summary>
+            负向移动
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorMoveType.MotorMoveAbsMove">
+            <summary>
+            绝对移动
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorMoveType.MotorMoveLocation">
+            <summary>
+            点位移动
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.WaitIOCode">
+            <summary>
+            IO返回码
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.WaitIOCode.WaitIOFailed">
+            <summary>
+            等待失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.WaitIOCode.WaitIOOK">
+            <summary>
+            等待OK
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.WaitIOCode.WaitIOStop">
+            <summary>
+            等待停止
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.WaitIOCode.WaitIOTimeout">
+            <summary>
+            等待超时
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.LibMsgID">
+            <summary>
+            系统库消息ID
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgLibIDInvalid">
+            <summary>
+            报警ID无效
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgSystemAlarmEnd">
+            <summary>
+            预留系统报警
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorHomeFail">
+            <summary>
+            归零失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorMoveLocFail">
+            <summary>
+            点位移动失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorMoveAbsFail">
+            <summary>
+            绝对位置移动失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorMoveRelFail">
+            <summary>
+            相对位置移动失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorNotHomeWarning">
+            <summary>
+            电机没有归零
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorSetSvonFail">
+            <summary>
+            电机使能失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorGetPosFail">
+            <summary>
+            获取当前位置失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgMotorLocationChange">
+            <summary>
+            点位被改变
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgInputNotON">
+            <summary>
+            输入点非ON
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgInputNotOFF">
+            <summary>
+            输入点非OFF
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgWaitInputOnTimeout">
+            <summary>
+            输入点等待ON超时
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgWaitInputOffTimeout">
+            <summary>
+            输入点等待OFF超时
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgOutputOnFail">
+            <summary>
+            输出点ON操作失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgOutputOffFail">
+            <summary>
+            输出点OFF操作失败
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgOutputStateChange">
+            <summary>
+            输出点状态被改变
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.LibMsgID.MsgLibIDEnd">
+            <summary>
+            为系统报警信息，预留0-999，1000不使用
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MCCtrlBtn">
+            <summary>
+            控制按钮
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCCtrlBtn.CtrlBtnStart">
+            <summary>
+            启动按钮
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCCtrlBtn.CtrlBtnStop">
+            <summary>
+            停止按钮
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCCtrlBtn.CtrlBtnReset">
+            <summary>
+            复位按钮
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCCtrlBtn.CtrlBtnRestart">
+            <summary>
+            整机重置
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCCtrlBtn.CtrlBtnEStop">
+            <summary>
+            急停按下
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCCtrlBtn.CtrlBtnEStopRelease">
+            <summary>
+            急停释放
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCCtrlBtn.MaxCtrlBtnCount">
+            <summary>
+            控制按钮数量
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MCState">
+            <summary>
+            设备状态
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCInvalidState">
+            <summary>
+            无效状态
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCIdle">
+            <summary>
+            闲置
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCInitializing">
+            <summary>
+            初始化中
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCInitComplete">
+            <summary>
+            初始化完成
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCRunning">
+            <summary>
+            运行中
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCStopInit">
+            <summary>
+            初始化停止
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCStopRun">
+            <summary>
+            运行停止
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCInitErr">
+            <summary>
+            初始化错误
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.MCRunErr">
+            <summary>
+            运行错误
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MCState.NumMCState">
+            <summary>
+            设置状态数量
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.UserLevelType">
+            <summary>
+            用户登录等级
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.ParameterLevel">
+            <summary>
+            参数使能等级
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.IOState">
+            <summary>
+            IO状态
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.Off">
+            <summary>
+            关
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.On">
+            <summary>
+            开
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.Deactivate">
+            <summary>
+            禁用
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.Activate">
+            <summary>
+            活动
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.Open">
+            <summary>
+            开
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.Close">
+            <summary>
+            关
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.Low">
+            <summary>
+            低
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.IOState.Hight">
+            <summary>
+            高
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.MotorLocation">
+            <summary>
+            电机点位数据
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorLocation.name">
+            <summary>
+            点位名
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorLocation.position">
+            <summary>
+            点位值
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MotorLocation.location">
+            <summary>
+            点位编号
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.MotorLocation.SetData(System.String,System.Int32,System.Single)">
+            <summary>
+            设置电机点位数据
+            </summary>
+            <param name="name">点位名</param>
+            <param name="Loc">点位编号</param>
+            <param name="pos">点位值</param>
+        </member>
+        <member name="T:SystemControlLibrary.MODULE">
+            <summary>
+            模组结构体
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MODULE.strName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MODULE.inputsCount">
+            <summary>
+            输入点数量
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MODULE.outputsCount">
+            <summary>
+            输出点数量
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MODULE.motorsCount">
+            <summary>
+            电机数量
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MODULE.lstInputs">
+            <summary>
+            输入点位列表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MODULE.lstOutputs">
+            <summary>
+            输出点位列表
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.MODULE.lstMotors">
+            <summary>
+            电机列表
+            </summary>
+        </member>
+        <member name="T:SystemControlLibrary.SysDef">
+            <summary>
+            系统预定义
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.DumpFolder">
+            <summary>
+            Dump文件夹
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.SystemLogFolder">
+            <summary>
+            系统Log文件夹
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.MachineLogFolder">
+            <summary>
+            设备Log文件夹
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.MotorCfgFolder">
+            <summary>
+            电机配置文件夹
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.HardwareCfg">
+            <summary>
+            硬件配置文件
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.InputCfg">
+            <summary>
+            输入配置文件
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.OutputCfg">
+            <summary>
+            输出配置文件
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.ModuleCfg">
+            <summary>
+            模组文件
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.ModuleExCfg">
+            <summary>
+            模组配置文件
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.MessageCfg">
+            <summary>
+            以ID报警的配置文件
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.MachineCfg">
+            <summary>
+            设备参数文件
+            </summary>
+        </member>
+        <member name="F:SystemControlLibrary.SysDef.MachineMdb">
+            <summary>
+            设备本地数据库文件
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.GetRandom(System.Int32,System.Int32)">
+            <summary>
+            获取随机数
+            </summary>
+            <param name="min">最小值</param>
+            <param name="max">最大值</param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.GetGUID">
+            <summary>
+            生成全局不重复GUID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.GetLanguage">
+            <summary>
+            获取设备显示语言：CHS中文，ENG英文
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.IsNoHardware">
+            <summary>
+            获取设备当前运行方式：TRUE无硬件设备模拟运行，FALSE有硬件运行
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.GetProductFormula">
+            <summary>
+            当前设备产品配方
+            </summary>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.GetAbsPathName(System.String)">
+            <summary>
+            获取当前相对路径的绝对路径
+            </summary>
+            <param name="relPath">相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.CreateFilePath(System.String)">
+            <summary>
+            创建当前绝对路径
+            </summary>
+            <param name="absPath">绝对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:SystemControlLibrary.SysDef.DeleteOldFiles(System.String,System.Int32)">
+            <summary>
+            删除文件夹strDir中nDays天以前的文件
+            </summary>
+            <param name="dir"></param>
+            <param name="days"></param>
+        </member>
+    </members>
+</doc>

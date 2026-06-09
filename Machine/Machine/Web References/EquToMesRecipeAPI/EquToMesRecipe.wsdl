@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Recipe">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Recipe" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Recipe">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="RecipeCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Version" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProductCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ParamList" type="tns:ArrayOfRecipeParam" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiRequestByScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Validation">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ResourceCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EquipmentCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LocalTime" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Validation" />
+      <s:complexType name="ArrayOfRecipeParam">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RecipeParam" nillable="true" type="tns:RecipeParam" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RecipeParam">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ParamCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParamUpper" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParamLower" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParamValue" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecipeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecipeResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiResponseForScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiResponseForScada" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiResponseForScada">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoginSoapHeader" type="tns:LoginSoapHeader" />
+      <s:complexType name="LoginSoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EquUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RecipeSoapIn">
+    <wsdl:part name="parameters" element="tns:Recipe" />
+  </wsdl:message>
+  <wsdl:message name="RecipeSoapOut">
+    <wsdl:part name="parameters" element="tns:RecipeResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecipeLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="EquToMesRecipeSoap">
+    <wsdl:operation name="Recipe">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">开机参数采集</wsdl:documentation>
+      <wsdl:input message="tns:RecipeSoapIn" />
+      <wsdl:output message="tns:RecipeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EquToMesRecipeHttpGet" />
+  <wsdl:portType name="EquToMesRecipeHttpPost" />
+  <wsdl:binding name="EquToMesRecipeSoap" type="tns:EquToMesRecipeSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Recipe">
+      <soap:operation soapAction="http://tempuri.org/Recipe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:RecipeLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesRecipeSoap12" type="tns:EquToMesRecipeSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Recipe">
+      <soap12:operation soapAction="http://tempuri.org/Recipe" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:RecipeLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesRecipeHttpGet" type="tns:EquToMesRecipeHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesRecipeHttpPost" type="tns:EquToMesRecipeHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="EquToMesRecipe">
+    <wsdl:port name="EquToMesRecipeSoap" binding="tns:EquToMesRecipeSoap">
+      <soap:address location="http://10.36.23.222:8095/EquToMes/EquToMesRecipe.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesRecipeSoap12" binding="tns:EquToMesRecipeSoap12">
+      <soap12:address location="http://10.36.23.222:8095/EquToMes/EquToMesRecipe.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesRecipeHttpGet" binding="tns:EquToMesRecipeHttpGet">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesRecipe.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesRecipeHttpPost" binding="tns:EquToMesRecipeHttpPost">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesRecipe.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

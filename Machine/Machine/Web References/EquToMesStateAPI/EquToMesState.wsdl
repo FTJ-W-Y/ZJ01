@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="State">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:State" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="State">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="StateCode" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiRequestByScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Validation">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ResourceCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EquipmentCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LocalTime" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Validation" />
+      <s:element name="StateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StateResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiResponseForScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiResponseForScada" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiResponseForScada">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoginSoapHeader" type="tns:LoginSoapHeader" />
+      <s:complexType name="LoginSoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EquUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="StateSoapIn">
+    <wsdl:part name="parameters" element="tns:State" />
+  </wsdl:message>
+  <wsdl:message name="StateSoapOut">
+    <wsdl:part name="parameters" element="tns:StateResponse" />
+  </wsdl:message>
+  <wsdl:message name="StateLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="EquToMesStateSoap">
+    <wsdl:operation name="State">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设备状态</wsdl:documentation>
+      <wsdl:input message="tns:StateSoapIn" />
+      <wsdl:output message="tns:StateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EquToMesStateHttpGet" />
+  <wsdl:portType name="EquToMesStateHttpPost" />
+  <wsdl:binding name="EquToMesStateSoap" type="tns:EquToMesStateSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="State">
+      <soap:operation soapAction="http://tempuri.org/State" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:StateLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesStateSoap12" type="tns:EquToMesStateSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="State">
+      <soap12:operation soapAction="http://tempuri.org/State" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:StateLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesStateHttpGet" type="tns:EquToMesStateHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesStateHttpPost" type="tns:EquToMesStateHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="EquToMesState">
+    <wsdl:port name="EquToMesStateSoap" binding="tns:EquToMesStateSoap">
+      <soap:address location="http://10.36.23.222:8095/EquToMes/EquToMesState.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesStateSoap12" binding="tns:EquToMesStateSoap12">
+      <soap12:address location="http://10.36.23.222:8095/EquToMes/EquToMesState.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesStateHttpGet" binding="tns:EquToMesStateHttpGet">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesState.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesStateHttpPost" binding="tns:EquToMesStateHttpPost">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesState.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UnBindContainerInCP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:UnBindContainerInCP" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UnBindContainerInCP">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SFCs" type="tns:ArrayOfString" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiRequestByScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Validation">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ResourceCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EquipmentCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LocalTime" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Validation" />
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UnBindContainerInCPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UnBindContainerInCPResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiResponseForScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiResponseForScada" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiResponseForScada">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoginSoapHeader" type="tns:LoginSoapHeader" />
+      <s:complexType name="LoginSoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EquUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UnBindContainerInCPSoapIn">
+    <wsdl:part name="parameters" element="tns:UnBindContainerInCP" />
+  </wsdl:message>
+  <wsdl:message name="UnBindContainerInCPSoapOut">
+    <wsdl:part name="parameters" element="tns:UnBindContainerInCPResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnBindContainerInCPLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="EquToMesUnBindContainerInCPSoap">
+    <wsdl:operation name="UnBindContainerInCP">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">条码解绑-容器-拆盘</wsdl:documentation>
+      <wsdl:input message="tns:UnBindContainerInCPSoapIn" />
+      <wsdl:output message="tns:UnBindContainerInCPSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EquToMesUnBindContainerInCPHttpGet" />
+  <wsdl:portType name="EquToMesUnBindContainerInCPHttpPost" />
+  <wsdl:binding name="EquToMesUnBindContainerInCPSoap" type="tns:EquToMesUnBindContainerInCPSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UnBindContainerInCP">
+      <soap:operation soapAction="http://tempuri.org/UnBindContainerInCP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UnBindContainerInCPLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesUnBindContainerInCPSoap12" type="tns:EquToMesUnBindContainerInCPSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UnBindContainerInCP">
+      <soap12:operation soapAction="http://tempuri.org/UnBindContainerInCP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UnBindContainerInCPLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesUnBindContainerInCPHttpGet" type="tns:EquToMesUnBindContainerInCPHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesUnBindContainerInCPHttpPost" type="tns:EquToMesUnBindContainerInCPHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="EquToMesUnBindContainerInCP">
+    <wsdl:port name="EquToMesUnBindContainerInCPSoap" binding="tns:EquToMesUnBindContainerInCPSoap">
+      <soap:address location="http://10.36.23.222:8095/EquToMes/EquToMesUnBindContainerInCP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesUnBindContainerInCPSoap12" binding="tns:EquToMesUnBindContainerInCPSoap12">
+      <soap12:address location="http://10.36.23.222:8095/EquToMes/EquToMesUnBindContainerInCP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesUnBindContainerInCPHttpGet" binding="tns:EquToMesUnBindContainerInCPHttpGet">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesUnBindContainerInCP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesUnBindContainerInCPHttpPost" binding="tns:EquToMesUnBindContainerInCPHttpPost">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesUnBindContainerInCP.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

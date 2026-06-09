@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Machine.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Machine_EquToMesOperatorLoginAPI_EquToMesOperatorLogin" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesOperatorLogin.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesHeartbeatAPI_EquToMesHeartbeat" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesHeartbeat.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesStateAPI_EquToMesState" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesState.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesAlarmAPI_EquToMesAlarm" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesAlarm.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesDownReasonAPI_EquToMesDownReason" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesDownReason.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesRecipeListGetAPI_EquToMesRecipeListGet" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesRecipeListGet.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesRecipeGetAPI_EquToMesRecipeGet" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesRecipeGet.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesRecipeVEAPI_EquToMesRecipeVersionExamine" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesRecipeVersionExamine.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesRecipeAPI_EquToMesRecipe" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesRecipe.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_EquToMesBakingAPI_EquToMesBaking" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EqutoMes/EquToMesBaking.asmx</Value>
+    </Setting>
+    <Setting Name="Machine_UnBindContainerInCPAPI_EquToMesUnBindContainerInCP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.36.23.222:8095/EquToMes/EquToMesUnBindContainerInCP.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

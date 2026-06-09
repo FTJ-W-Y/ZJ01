@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Heartbeat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:Heartbeat" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Heartbeat">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="IsOnline" type="s:boolean" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiRequestByScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Validation">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ResourceCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EquipmentCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LocalTime" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Validation" />
+      <s:element name="HeartbeatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HeartbeatResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiResponseForScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiResponseForScada" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiResponseForScada">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoginSoapHeader" type="tns:LoginSoapHeader" />
+      <s:complexType name="LoginSoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EquUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HeartbeatSoapIn">
+    <wsdl:part name="parameters" element="tns:Heartbeat" />
+  </wsdl:message>
+  <wsdl:message name="HeartbeatSoapOut">
+    <wsdl:part name="parameters" element="tns:HeartbeatResponse" />
+  </wsdl:message>
+  <wsdl:message name="HeartbeatLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="EquToMesHeartbeatSoap">
+    <wsdl:operation name="Heartbeat">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设备心跳</wsdl:documentation>
+      <wsdl:input message="tns:HeartbeatSoapIn" />
+      <wsdl:output message="tns:HeartbeatSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EquToMesHeartbeatHttpGet" />
+  <wsdl:portType name="EquToMesHeartbeatHttpPost" />
+  <wsdl:binding name="EquToMesHeartbeatSoap" type="tns:EquToMesHeartbeatSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Heartbeat">
+      <soap:operation soapAction="http://tempuri.org/Heartbeat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:HeartbeatLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesHeartbeatSoap12" type="tns:EquToMesHeartbeatSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Heartbeat">
+      <soap12:operation soapAction="http://tempuri.org/Heartbeat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:HeartbeatLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesHeartbeatHttpGet" type="tns:EquToMesHeartbeatHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesHeartbeatHttpPost" type="tns:EquToMesHeartbeatHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="EquToMesHeartbeat">
+    <wsdl:port name="EquToMesHeartbeatSoap" binding="tns:EquToMesHeartbeatSoap">
+      <soap:address location="http://10.36.23.222:8095/EquToMes/EquToMesHeartbeat.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesHeartbeatSoap12" binding="tns:EquToMesHeartbeatSoap12">
+      <soap12:address location="http://10.36.23.222:8095/EquToMes/EquToMesHeartbeat.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesHeartbeatHttpGet" binding="tns:EquToMesHeartbeatHttpGet">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesHeartbeat.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesHeartbeatHttpPost" binding="tns:EquToMesHeartbeatHttpPost">
+      <http:address location="http://10.36.23.222:8095/EquToMes/EquToMesHeartbeat.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

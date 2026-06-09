@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HelperLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:HelperLibrary.MsgBox.Show(System.String,HelperLibrary.MessageType,System.String[])">
+            <summary>
+            非模态对话框
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="btnTxt">按钮文字</param>
+        </member>
+        <member name="M:HelperLibrary.MsgBox.Show(System.String,HelperLibrary.MessageType,System.Int32,System.Windows.Forms.DialogResult,System.String[])">
+            <summary>
+            非模态对话框
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="countdownTime">倒计时时间</param>
+            <param name="countdownDlgBtn">倒计时选择按钮</param>
+            <param name="btnTxt">按钮文字</param>
+        </member>
+        <member name="M:HelperLibrary.MsgBox.ShowDialog(System.String,HelperLibrary.MessageType,System.String[])">
+            <summary>
+            模态对话框
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="btnTxt">按钮文字</param>
+            <returns>DialogResult</returns>
+        </member>
+        <member name="M:HelperLibrary.MsgBox.ShowDialog(System.String,HelperLibrary.MessageType,System.Int32,System.Windows.Forms.DialogResult,System.String[])">
+            <summary>
+            模态对话框
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="countdownTime">倒计时时间</param>
+            <param name="countdownDlgBtn">倒计时选择按钮</param>
+            <param name="btnTxt">按钮文字</param>
+            <returns>DialogResult</returns>
+        </member>
+        <member name="M:HelperLibrary.MsgBox.SetMsgBoxType(HelperLibrary.MessageType,System.String[])">
+            <summary>
+            设置窗体
+            </summary>
+            <param name="msgType"></param>
+            <param name="btnTxt"></param>
+        </member>
+        <member name="M:HelperLibrary.MsgBox._btnNO_Click(System.Object,System.EventArgs)">
+            <summary>
+            NO按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HelperLibrary.MsgBox._btnOK_Click(System.Object,System.EventArgs)">
+            <summary>
+            OK按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:HelperLibrary.MsgBox._btnYes_Click(System.Object,System.EventArgs)">
+            <summary>
+            YES按钮
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:HelperLibrary.MsgBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.MsgBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:HelperLibrary.MsgBox.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:HelperLibrary.MessageType">
+            <summary>
+            报警弹窗消息类型
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.MessageType.MsgMessage">
+            <summary>
+            提示：灰色，仅确认按钮（OK）
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.MessageType.MsgQuestion">
+            <summary>
+            询问：蓝色，两个按钮，是（YES）或否（NO）
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.MessageType.MsgWarning">
+            <summary>
+            警告：黄色，仅确认按钮（OK）
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.MessageType.MsgAlarm">
+            <summary>
+            报警：红色，仅确认按钮（OK）
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.MessageType.MsgTypeEnd">
+            <summary>
+            结束
+            </summary>
+        </member>
+        <member name="T:HelperLibrary.HelperDef">
+            <summary>
+            HelperDef定义
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.HelperDef.GetLanguage">
+            <summary>
+            获取设备显示语言：CHS中文，ENG英文
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.HelperDef.IsNoHardware">
+            <summary>
+            获取设备当前运行方式：TRUE无硬件设备模拟运行，FALSE有硬件运行
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.HelperDef.GetProductFormula">
+            <summary>
+            当前设备产品配方
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.HelperDef.GetAbsPathName(System.String)">
+            <summary>
+            获取当前相对路径的绝对路径
+            </summary>
+            <param name="relPath">相对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:HelperLibrary.HelperDef.CreateFilePath(System.String)">
+            <summary>
+            创建当前绝对路径
+            </summary>
+            <param name="absPath">绝对路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:HelperLibrary.HelperDef.DeleteOldFiles(System.String,System.Int32)">
+            <summary>
+            删除文件夹strDir中nDays天以前的文件
+            </summary>
+            <param name="dir"></param>
+            <param name="days"></param>
+        </member>
+        <member name="T:HelperLibrary.IniFile">
+            <summary>
+            INI文件读写操作类；密封类，不可被继承
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.IniFile.GetPrivateProfileSection(System.String,System.IntPtr,System.UInt32,System.String)">
+            <summary>
+            获取某个指定节点(Section)中所有KEY和Value
+            </summary>
+            <param name="lpAppName">节点名称</param>
+            <param name="lpReturnedString">返回值的内存地址,每个之间用\0分隔</param>
+            <param name="nSize">内存大小(characters)</param>
+            <param name="lpFileName">Ini文件</param>
+            <returns>内容的实际长度,为0表示没有内容,为nSize-2表示内存大小不够</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.GetPrivateProfileString(System.String,System.String,System.String,System.Char[],System.UInt32,System.String)">
+            <summary>
+            读取INI文件中指定的Key的值
+            </summary>
+            <param name="lpAppName">节点名称。如果为null,则读取INI中所有节点名称,每个节点名称之间用\0分隔</param>
+            <param name="lpKeyName">Key名称。如果为null,则读取INI中指定节点中的所有KEY,每个KEY之间用\0分隔</param>
+            <param name="lpDefault">读取失败时的默认值</param>
+            <param name="lpReturnedString">读取的内容缓冲区，读取之后，多余的地方使用\0填充</param>
+            <param name="nSize">内容缓冲区的长度</param>
+            <param name="lpFileName">INI文件名</param>
+            <returns>实际读取到的长度</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.WritePrivateProfileSection(System.String,System.String,System.String)">
+            <summary>
+            将指定的键值对写到指定的节点，如果已经存在则替换。
+            </summary>
+            <param name="lpAppName">节点，如果不存在此节点，则创建此节点</param>
+            <param name="lpString">Item键值对，多个用\0分隔,形如key1=value1\0key2=value2
+            <para>如果为string.Empty，则删除指定节点下的所有内容，保留节点</para>
+            <para>如果为null，则删除指定节点下的所有内容，并且删除该节点</para>
+            </param>
+            <param name="lpFileName">INI文件</param>
+            <returns>是否成功写入</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.WritePrivateProfileString(System.String,System.String,System.String,System.String)">
+            <summary>
+            将指定的键和值写到指定的节点，如果已经存在则替换
+            </summary>
+            <param name="lpAppName">节点名称</param>
+            <param name="lpKeyName">键名称。如果为null，则删除指定的节点及其所有的项目</param>
+            <param name="lpString">值内容。如果为null，则删除指定节点中指定的键。</param>
+            <param name="lpFileName">INI文件</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.ReadAllItems(System.String,System.String)">
+            <summary>
+            获取INI文件中指定节点(Section)中的所有条目(key=value形式)
+            </summary>
+            <param name="iniFile">Ini文件</param>
+            <param name="section">节点名称</param>
+            <returns>指定节点中的所有项目,没有内容返回string[0]</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.ReadString(System.String,System.String,System.String,System.String)">
+            <summary>
+            读取INI文件中指定KEY的值
+            </summary>
+            <param name="iniFile">Ini文件</param>
+            <param name="section">节点名称</param>
+            <param name="key">键名称</param>
+            <param name="defaultValue">如果没此KEY所使用的默认值</param>
+            <returns>读取到的值</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.ReadBool(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            读取INI文件中指定KEY的值
+            </summary>
+            <param name="iniFile">Ini文件</param>
+            <param name="section">节点名称</param>
+            <param name="key">键名称</param>
+            <param name="defaultValue">如果没此KEY所使用的默认值</param>
+            <returns>读取到的值</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.ReadInt(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            读取INI文件中指定KEY的值
+            </summary>
+            <param name="iniFile">Ini文件</param>
+            <param name="section">节点名称</param>
+            <param name="key">键名称</param>
+            <param name="defaultValue">如果没此KEY所使用的默认值</param>
+            <returns>读取到的值</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.ReadDouble(System.String,System.String,System.Double,System.String)">
+            <summary>
+            读取INI文件中指定KEY的值
+            </summary>
+            <param name="iniFile">Ini文件</param>
+            <param name="section">节点名称</param>
+            <param name="key">键名称</param>
+            <param name="defaultValue">如果没此KEY所使用的默认值</param>
+            <returns>读取到的值</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.WriteAlllItems(System.String,System.String,System.String)">
+            <summary>
+            在INI文件中，将指定的键值对写到指定的节点，如果已经存在则替换
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点，如果不存在此节点，则创建此节点</param>
+            <param name="items">键值对，多个用\0分隔,形如key1=value1\0key2=value2</param>
+            <returns></returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.WriteString(System.String,System.String,System.String,System.String)">
+            <summary>
+            在INI文件中，指定节点写入指定的键及值。如果已经存在，则替换。如果没有则创建。
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.WriteBool(System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            在INI文件中，指定节点写入指定的键及值。如果已经存在，则替换。如果没有则创建。
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.WriteInt(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            在INI文件中，指定节点写入指定的键及值。如果已经存在，则替换。如果没有则创建。
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.WriteDouble(System.String,System.String,System.Double,System.String)">
+            <summary>
+            在INI文件中，指定节点写入指定的键及值。如果已经存在，则替换。如果没有则创建。
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点</param>
+            <param name="key">键</param>
+            <param name="value">值</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.DeleteKey(System.String,System.String,System.String)">
+            <summary>
+            在INI文件中，删除指定节点中的指定的键。
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点</param>
+            <param name="key">键</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.EmptySection(System.String,System.String)">
+            <summary>
+            在INI文件中，删除指定节点中的所有内容。
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="M:HelperLibrary.IniFile.DeleteSection(System.String,System.String)">
+            <summary>
+            在INI文件中，删除指定的节点。
+            </summary>
+            <param name="iniFile">INI文件</param>
+            <param name="section">节点</param>
+            <returns>操作是否成功</returns>
+        </member>
+        <member name="T:HelperLibrary.LogType">
+            <summary>
+            日志消息类型的枚举
+            </summary>  
+        </member>
+        <member name="F:HelperLibrary.LogType.Information">
+            <summary>
+            普通信息类型的日志记录
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogType.Success">
+            <summary>
+            成功信息类型的日志记录
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogType.Warning">
+            <summary>
+            警告信息类型的日志记录
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogType.Alarm">
+            <summary>
+            报警信息类型的日志记录
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogType.Error">
+            <summary>
+            错误信息类型的日志记录
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogType.Fatal">
+            <summary>
+            致命类型的日志记录
+            </summary>
+        </member>
+        <member name="T:HelperLibrary.LogFile">
+            <summary>
+            Log文件类：密封不可继承
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogFile._filePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogFile._fileSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogFile._storageLife">
+            <summary>
+            文件存储时间
+            </summary>
+        </member>
+        <member name="F:HelperLibrary.LogFile._writer">
+            <summary>  
+            日志文件写入流对象  
+            </summary>  
+        </member>
+        <member name="F:HelperLibrary.LogFile._fileLock">
+            <summary>
+            日志文件流互斥对象
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.LogFile.#ctor">
+            <summary>
+            初始化实例
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.LogFile.SetFileInfo(System.String,System.Int64,System.Int32)">
+            <summary>
+            设置文件信息
+            </summary>
+            <param name="filePath">文件路径</param>
+            <param name="size">文件存储大小：兆</param>
+            <param name="storageLife">存储日期：天</param>
+        </member>
+        <member name="M:HelperLibrary.LogFile.WriteLog(System.DateTime,System.String,System.String,HelperLibrary.LogType)">
+            <summary>
+            写Log文件
+            </summary>
+            <param name="msgDateTime">写Log时间</param>
+            <param name="msglocation">Log输出位置</param>
+            <param name="msgText">Log内容</param>
+            <param name="msgType">Log类型</param>
+        </member>
+        <member name="M:HelperLibrary.LogFile.FileOpen">
+            <summary>
+            打开日志文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HelperLibrary.LogFile.FileClose">
+            <summary>
+            关闭打开的日志文件
+            </summary>
+        </member>
+        <member name="T:HelperLibrary.ShowMsgBox">
+            <summary>
+            报警对话框
+            </summary>
+        </member>
+        <member name="M:HelperLibrary.ShowMsgBox.Show(System.String,HelperLibrary.MessageType,System.String[])">
+            <summary>
+            异步模态对话框：不阻塞线程
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="btnTxt">所有按钮文字</param>
+        </member>
+        <member name="M:HelperLibrary.ShowMsgBox.Show(System.String,HelperLibrary.MessageType,System.Int32,System.Windows.Forms.DialogResult,System.String[])">
+            <summary>
+            异步模态对话框：不阻塞线程
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="countdownTime">倒计时时间：秒</param>
+            <param name="countdownDlgBtn">倒计时选择按钮</param>
+            <param name="btnTxt">所有按钮文字</param>
+        </member>
+        <member name="M:HelperLibrary.ShowMsgBox.ShowDialog(System.String,HelperLibrary.MessageType,System.String[])">
+            <summary>
+            模态对话框
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="btnTxt">所有按钮文字</param>
+            <returns>DialogResult</returns>
+        </member>
+        <member name="M:HelperLibrary.ShowMsgBox.ShowDialog(System.String,HelperLibrary.MessageType,System.Int32,System.Windows.Forms.DialogResult,System.String[])">
+            <summary>
+            模态对话框
+            </summary>
+            <param name="msg">报警内容</param>
+            <param name="msgType">报警类型</param>
+            <param name="countdownTime">倒计时时间：秒</param>
+            <param name="countdownDlgBtn">倒计时选择按钮</param>
+            <param name="btnTxt">所有按钮文字</param>
+            <returns>DialogResult</returns>
+        </member>
+    </members>
+</doc>

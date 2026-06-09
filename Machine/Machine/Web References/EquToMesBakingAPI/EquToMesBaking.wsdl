@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckSFC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:EquipmentBakingCheckRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EquipmentBakingCheckRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="SFC" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiRequestByScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:Validation">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ResourceCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EquipmentCode" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="LocalTime" type="s:dateTime" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Validation" />
+      <s:element name="CheckSFCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckSFCResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiResponseForScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiResponseForScada" />
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseApiResponseForScada">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Code" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="LoginSoapHeader" type="tns:LoginSoapHeader" />
+      <s:complexType name="LoginSoapHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EquUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EquPassword" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorUserID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperatorPassword" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="BakingBindContainer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:BindContainer" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="BindContainer">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerSFCs" type="tns:ArrayOfBindContainerSFC" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfBindContainerSFC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BindContainerSFC" nillable="true" type="tns:BindContainerSFC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BindContainerSFC">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SFC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BakingBindContainerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BakingBindContainerResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BoundInBaking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:EquipmentBoundInBakingRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EquipmentBoundInBakingRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerInfo" type="tns:ArrayOfContainerInfo" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerCode" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfContainerInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ContainerInfo" nillable="true" type="tns:ContainerInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ContainerInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SFC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BoundInBakingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BoundInBakingResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OutBoundInBaking">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:EquipmentOutBoundInBakingRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EquipmentOutBoundInBakingRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="OutBoundContainerInfo" type="tns:ArrayOfOutBoundContainerInfo" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfOutBoundContainerInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OutBoundContainerInfo" nillable="true" type="tns:OutBoundContainerInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OutBoundContainerInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ContainerCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContainerInfo" type="tns:ArrayOfContainerResultInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfContainerResultInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ContainerResultInfo" nillable="true" type="tns:ContainerResultInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ContainerResultInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SFC" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SFCLocation" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Passed" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParamList" type="tns:ArrayOfParamDTO" />
+          <s:element minOccurs="0" maxOccurs="1" name="NG" type="tns:ArrayOfProductNG" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfParamDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ParamDTO" nillable="true" type="tns:ParamDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ParamDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ParamCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParamValue" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductNG">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductNG" nillable="true" type="tns:ProductNG" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductNG">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NGCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="OutBoundInBakingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OutBoundInBakingResult" type="tns:ApiResponseForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBindContainer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="tns:EquipmentBakingGetBindContainerRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EquipmentBakingGetBindContainerRequest">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiRequestByScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerCode" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetBindContainerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBindContainerResult" type="tns:ApiResponseContainerInfoForScada" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApiResponseContainerInfoForScada">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseApiResponseForScada">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ContainerInfo" type="tns:ArrayOfBakingBindContainerSFC" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfBakingBindContainerSFC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BakingBindContainerSFC" nillable="true" type="tns:BakingBindContainerSFC" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BakingBindContainerSFC">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="SFC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckSFCSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckSFC" />
+  </wsdl:message>
+  <wsdl:message name="CheckSFCSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckSFCResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckSFCLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="BakingBindContainerSoapIn">
+    <wsdl:part name="parameters" element="tns:BakingBindContainer" />
+  </wsdl:message>
+  <wsdl:message name="BakingBindContainerSoapOut">
+    <wsdl:part name="parameters" element="tns:BakingBindContainerResponse" />
+  </wsdl:message>
+  <wsdl:message name="BakingBindContainerLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="BoundInBakingSoapIn">
+    <wsdl:part name="parameters" element="tns:BoundInBaking" />
+  </wsdl:message>
+  <wsdl:message name="BoundInBakingSoapOut">
+    <wsdl:part name="parameters" element="tns:BoundInBakingResponse" />
+  </wsdl:message>
+  <wsdl:message name="BoundInBakingLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="OutBoundInBakingSoapIn">
+    <wsdl:part name="parameters" element="tns:OutBoundInBaking" />
+  </wsdl:message>
+  <wsdl:message name="OutBoundInBakingSoapOut">
+    <wsdl:part name="parameters" element="tns:OutBoundInBakingResponse" />
+  </wsdl:message>
+  <wsdl:message name="OutBoundInBakingLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetBindContainerSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBindContainer" />
+  </wsdl:message>
+  <wsdl:message name="GetBindContainerSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBindContainerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBindContainerLoginSoapHeader">
+    <wsdl:part name="LoginSoapHeader" element="tns:LoginSoapHeader" />
+  </wsdl:message>
+  <wsdl:portType name="EquToMesBakingSoap">
+    <wsdl:operation name="CheckSFC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">电芯校验</wsdl:documentation>
+      <wsdl:input message="tns:CheckSFCSoapIn" />
+      <wsdl:output message="tns:CheckSFCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BakingBindContainer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">电芯烘烤托盘绑定</wsdl:documentation>
+      <wsdl:input message="tns:BakingBindContainerSoapIn" />
+      <wsdl:output message="tns:BakingBindContainerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BoundInBaking">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">电芯烘烤托盘进站</wsdl:documentation>
+      <wsdl:input message="tns:BoundInBakingSoapIn" />
+      <wsdl:output message="tns:BoundInBakingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OutBoundInBaking">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">电芯烘烤出站解绑</wsdl:documentation>
+      <wsdl:input message="tns:OutBoundInBakingSoapIn" />
+      <wsdl:output message="tns:OutBoundInBakingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBindContainer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取托盘明细</wsdl:documentation>
+      <wsdl:input message="tns:GetBindContainerSoapIn" />
+      <wsdl:output message="tns:GetBindContainerSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="EquToMesBakingHttpGet" />
+  <wsdl:portType name="EquToMesBakingHttpPost" />
+  <wsdl:binding name="EquToMesBakingSoap" type="tns:EquToMesBakingSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckSFC">
+      <soap:operation soapAction="http://tempuri.org/CheckSFC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CheckSFCLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BakingBindContainer">
+      <soap:operation soapAction="http://tempuri.org/BakingBindContainer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BakingBindContainerLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BoundInBaking">
+      <soap:operation soapAction="http://tempuri.org/BoundInBaking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:BoundInBakingLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutBoundInBaking">
+      <soap:operation soapAction="http://tempuri.org/OutBoundInBaking" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:OutBoundInBakingLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBindContainer">
+      <soap:operation soapAction="http://tempuri.org/GetBindContainer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetBindContainerLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesBakingSoap12" type="tns:EquToMesBakingSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckSFC">
+      <soap12:operation soapAction="http://tempuri.org/CheckSFC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CheckSFCLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BakingBindContainer">
+      <soap12:operation soapAction="http://tempuri.org/BakingBindContainer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BakingBindContainerLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BoundInBaking">
+      <soap12:operation soapAction="http://tempuri.org/BoundInBaking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:BoundInBakingLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OutBoundInBaking">
+      <soap12:operation soapAction="http://tempuri.org/OutBoundInBaking" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:OutBoundInBakingLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBindContainer">
+      <soap12:operation soapAction="http://tempuri.org/GetBindContainer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetBindContainerLoginSoapHeader" part="LoginSoapHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesBakingHttpGet" type="tns:EquToMesBakingHttpGet">
+    <http:binding verb="GET" />
+  </wsdl:binding>
+  <wsdl:binding name="EquToMesBakingHttpPost" type="tns:EquToMesBakingHttpPost">
+    <http:binding verb="POST" />
+  </wsdl:binding>
+  <wsdl:service name="EquToMesBaking">
+    <wsdl:port name="EquToMesBakingSoap" binding="tns:EquToMesBakingSoap">
+      <soap:address location="http://10.36.23.222:8095/EqutoMes/EquToMesBaking.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesBakingSoap12" binding="tns:EquToMesBakingSoap12">
+      <soap12:address location="http://10.36.23.222:8095/EqutoMes/EquToMesBaking.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesBakingHttpGet" binding="tns:EquToMesBakingHttpGet">
+      <http:address location="http://10.36.23.222:8095/EqutoMes/EquToMesBaking.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EquToMesBakingHttpPost" binding="tns:EquToMesBakingHttpPost">
+      <http:address location="http://10.36.23.222:8095/EqutoMes/EquToMesBaking.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
