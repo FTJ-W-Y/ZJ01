@@ -1,0 +1,28 @@
+D:\backups\works\OPCUA-ZJ01\Applications\BakingDataLib\bin\Debug\BakingDataLib.dll
+D:\backups\works\OPCUA-ZJ01\Applications\BakingDataLib\bin\Debug\BakingDataLib.pdb
+D:\backups\works\OPCUA-ZJ01\Applications\BakingDataLib\obj\Debug\BakingDataLib.csprojAssemblyReference.cache
+D:\backups\works\OPCUA-ZJ01\Applications\BakingDataLib\obj\Debug\BakingDataLib.csproj.CoreCompileInputs.cache
+D:\backups\works\OPCUA-ZJ01\Applications\BakingDataLib\obj\Debug\BakingDataLib.dll
+D:\backups\works\OPCUA-ZJ01\Applications\BakingDataLib\obj\Debug\BakingDataLib.pdb
+D:\backups\works\OPCUA-ZJ01\Applications\BakingDataLib\obj\Debug\BakingDataLib.sourcelink.json
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\BakingDataLib\bin\Debug\BakingDataLib.dll
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\BakingDataLib\bin\Debug\BakingDataLib.pdb
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\BakingDataLib\obj\Debug\BakingDataLib.csprojAssemblyReference.cache
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\BakingDataLib\obj\Debug\BakingDataLib.csproj.CoreCompileInputs.cache
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\BakingDataLib\obj\Debug\BakingDataLib.sourcelink.json
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\BakingDataLib\obj\Debug\BakingDataLib.dll
+D:\backups\works\ZJ01 0822 To gu\ZJ01 0822 To gu\BakingDataLib\obj\Debug\BakingDataLib.pdb
+D:\Software\ZJ01 0920\ZJ01 0920\BakingDataLib\bin\Debug\BakingDataLib.dll
+D:\Software\ZJ01 0920\ZJ01 0920\BakingDataLib\bin\Debug\BakingDataLib.pdb
+D:\Software\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.csprojAssemblyReference.cache
+D:\Software\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.csproj.CoreCompileInputs.cache
+D:\Software\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.sourcelink.json
+D:\Software\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.dll
+D:\Software\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.pdb
+D:\backups\works\ZJ01 0920\ZJ01 0920\BakingDataLib\bin\Debug\BakingDataLib.dll
+D:\backups\works\ZJ01 0920\ZJ01 0920\BakingDataLib\bin\Debug\BakingDataLib.pdb
+D:\backups\works\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.csprojAssemblyReference.cache
+D:\backups\works\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.csproj.CoreCompileInputs.cache
+D:\backups\works\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.sourcelink.json
+D:\backups\works\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.dll
+D:\backups\works\ZJ01 0920\ZJ01 0920\BakingDataLib\obj\Debug\BakingDataLib.pdb
